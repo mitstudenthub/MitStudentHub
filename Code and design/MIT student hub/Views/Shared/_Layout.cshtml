@@ -1,0 +1,99 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MIT_student_hub</title>
+
+    @*<environment include="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        </environment>
+        <environment exclude="Development">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+                  crossorigin="anonymous"
+                  integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+        </environment>*@
+    <link href=@Url.Content("~/assets/Home/css/bootstrap.css") rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Custom styles for this template -->
+    <link href=@Url.Content("~/assets/Home/css/font-awesome.css") rel="stylesheet">
+    <link href=@Url.Content("~/assets/Home/css/styles.css") rel="stylesheet">
+</head>
+<body>
+    <div style="position:relative;">
+        <header>
+            <div class="container">
+                <div class="col-md-8">
+                    <img src=@Url.Content("~/assets/Home/img/MITlogo.png") class="logo">
+                </div>
+
+                <div class="col-md-4" style="text-align:right;vertical-align:bottom;">
+                    <i class="icon-signout" style="color:white;"></i><a href="@Url.Action("SignOut","Home")" style="color:white;">@HttpContextAccessor.HttpContext.Session.GetString("User")</a>
+                </div>
+            </div>
+
+        </header>
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Home" ? "active" : "")"><a href=@Url.Action("Index","Home")>Home</a></li>
+                        <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Job" ? "active" : "")"><a href=@Url.Action("Index","Job")>Jobs</a></li>
+                        <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Accomodation" ? "active" : "")"><a href=@Url.Action("Index","Accomodation")>Accommodation</a></li>
+                        <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Travel" ? "active" : "")"><a href=@Url.Action("Index","Travel")>Travel</a></li>
+                        <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Events" ? "active" : "")"><a href=@Url.Action("Index","Events")>Events</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <partial name="_CookieConsentPartial" />
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer style="position:absolute;width:100%;">
+            <div class="container">
+                <p>MIT Student Hub Copyright &copy; 2015, All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,40 @@
+D:\Hot Topics\MIT Student Hub\MIT student hub\bin\Debug\netcoreapp2.2\MIT student hub.deps.json
+D:\Hot Topics\MIT Student Hub\MIT student hub\bin\Debug\netcoreapp2.2\MIT student hub.runtimeconfig.json
+D:\Hot Topics\MIT Student Hub\MIT student hub\bin\Debug\netcoreapp2.2\MIT student hub.runtimeconfig.dev.json
+D:\Hot Topics\MIT Student Hub\MIT student hub\bin\Debug\netcoreapp2.2\MIT student hub.dll
+D:\Hot Topics\MIT Student Hub\MIT student hub\bin\Debug\netcoreapp2.2\MIT student hub.pdb
+D:\Hot Topics\MIT Student Hub\MIT student hub\bin\Debug\netcoreapp2.2\MIT student hub.Views.dll
+D:\Hot Topics\MIT Student Hub\MIT student hub\bin\Debug\netcoreapp2.2\MIT student hub.Views.pdb
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.csprojAssemblyReference.cache
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.csproj.CoreCompileInputs.cache
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.RazorAssemblyInfo.cache
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.RazorAssemblyInfo.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.AssemblyInfoInputs.cache
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.AssemblyInfo.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.TagHelpers.input.cache
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.TagHelpers.output.cache
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.RazorCoreGenerate.cache
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.RazorTargetAssemblyInfo.cache
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.RazorTargetAssemblyInfo.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.Views.pdb
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.dll
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.pdb
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\MIT student hub.csproj.CopyComplete
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Job\Index.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Travel\Index.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Events\Index.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Accomodation\Index.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Job\_JobPartial.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Job\ViewAlljobs.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Accomodation\ViewAllAccomodation.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Travel\ViewAllTravels.g.cshtml.cs
+D:\Hot Topics\MIT Student Hub\MIT student hub\obj\Debug\netcoreapp2.2\Razor\Views\Events\ViewAllEvents.g.cshtml.cs

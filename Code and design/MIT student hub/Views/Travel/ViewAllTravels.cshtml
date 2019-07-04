@@ -1,0 +1,80 @@
+﻿@model List<MIT_student_hub.Models.UserDataModel>
+@{
+    ViewData["Title"] = "ViewAllTravels";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-2">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">All Travel Posts</h3>
+                    </div>
+
+                </div>
+                @foreach (var item in Model)
+                {
+                    <div class="panel panel-default post">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <a class="post-avatar thumbnail" href="profile.html"><img src="@item.Userimage"><div class="center">@item.Userid</div></a>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="bubble">
+                                        <div class="pointer">
+                                            <center style="padding-bottom:10px;">
+                                                <img src="data:image/jpeg;base64,@item.PostImage" height="100%" width="100%" style=" display:block;align-items:center;border: 1px solid #ddd;border-radius: 4px;padding: 5px;">
+                                            </center>
+                                            <p><b>@item.MessageString</b></p>
+                                        </div>
+                                        <div class="pointer-border"></div>
+                                    </div><!--bubble end -->
+                                    <p class="post-action"><a href="#">Comment</a></p>
+                                    <div class="comment-form">
+                                        @using (Html.BeginForm("CommentPost", "Job", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-inline" }))
+                                        {
+                                            <input name="Postid4comment" id="Postid4comment_@item.Postid" type="hidden" value="@item.Postid" />
+                                            <input name="Userid4comment" id="Userid4comment_@item.Postid" type="hidden" value="@item.Userid" />
+                                            <div class="form-group">
+                                                @Html.TextBox("commentmessage", null, new { @class = "form-control", @placeholder = "Enter comment", @type = "text", @requried = "required" })
+                                            </div>
+
+                                            <button type="submit" class="btn btn-default">Add</button>
+                                        }
+                                    </div><!--comment form ends-->
+                                    <div class="clearfix"></div>
+                                    <div class="comments">
+                                        @if (item.Comments != null)
+                                        {
+                                            @foreach (var comment in item.Comments)
+                                            {
+                                                <div class="comment">
+                                                    <a class="comment-avatar pull-left" href="#"><img src="@comment.commentuserimage"></a>
+                                                    <div class="comment-text">
+                                                        <p>@comment.commenttext</p>
+                                                    </div>
+                                                </div>
+                                            }
+                                        }
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div><!-- col-md-8 end -->
+
+
+        </div>
+    </div>
+
+</section>
+
+
+
